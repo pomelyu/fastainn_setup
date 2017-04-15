@@ -34,5 +34,21 @@ See <http://gogojimmy.net/2013/05/26/vagrant-tutorial/> for more detail about th
 10. In host computer browser, enter ``localhost:8888`` and type the password to access the notebook
 
 ### vagrant hotkey
+vagrant 是一個可以方便設定虛擬機的工具，背後要用到 virtual box。但使用起來比 vb 還要輕量很多，ref: <http://gogojimmy.net/2013/05/26/vagrant-tutorial/>
+* ``vagrant up`` VM 開機
+* ``vagrant ssh`` ssh 登入 VM，預設 port 22
+* ``vagrant halt`` VM 關機，建議沒事不用關機
+* ``vagrant box add`` 加入 box
+* ``vagrant box list`` 列出所有 box
+* ``vagrant init`` 產生 default 的 Vagrantfile
+
 ### tmux hotkey
+讓 terminal 可以以一次跑多個程式，並可以儲存或還原目前的狀態，ref: <http://blog.chh.tw/posts/tmux-terminal-multiplexer/>
+* ``tmux`` 開啟 tmux
+* ``tmux attach`` 回復之前 detach 的狀態
+* ``ctrl+b``+``"`` 產生上下分割視窗
+* ``ctrl+b``+``%`` 產生左右分割視窗
+* ``ctrl+b``+``o`` 切換游標的位置
+* ``ctrl+b``+``d`` detach 目前狀態，回到原先的介面
+
 ### jupyter notebook hotkey
