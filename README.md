@@ -33,6 +33,10 @@ See <http://gogojimmy.net/2013/05/26/vagrant-tutorial/> for more detail about th
 9. In directory ``~/course/courses/deeplearning1/nbs/``, run ``jupyter notebook`` to start the server
 10. In host computer browser, enter ``localhost:8888`` and type the password to access the notebook
 
+### Run lesson1
+1. Run ``./get-lesson1.sh``
+2. ``vim ~/.theanorc`` modify ``[global] device=gpu`` to ``[global] device=cpu``
+
 ### vagrant hotkey
 vagrant 是一個可以方便設定虛擬機的工具，背後要用到 virtual box。但使用起來比 vb 還要輕量很多，ref: <http://gogojimmy.net/2013/05/26/vagrant-tutorial/>
 * ``vagrant up`` VM 開機

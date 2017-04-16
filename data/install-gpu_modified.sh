@@ -65,6 +65,11 @@ sudo apt-get install git
 # clone the fast.ai course repo and prompt to start notebook
 cd ~
 cd course
-git clone https://github.com/fastai/courses.git
+mkdir nbs
+# get the lesson 1 notebook
+cd nbs
+wget https://raw.githubusercontent.com/fastai/courses/master/deeplearning1/nbs/lesson1.ipynb
+
+#git clone https://github.com/fastai/courses.git
 echo "\"jupyter notebook\" will start Jupyter on port 8888"
 echo "If you get an error instead, try restarting your session so your $PATH is updated"
