@@ -29,7 +29,7 @@ conda upgrade -y --all
 # install and configure theano
 pip install theano
 echo "[global]
-device = gpu
+device = cpu
 floatX = float32
 
 [cuda]
