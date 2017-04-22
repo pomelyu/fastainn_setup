@@ -30,14 +30,16 @@ See <http://gogojimmy.net/2013/05/26/vagrant-tutorial/> for more detail about th
 4. in repository root folder run ``vagrant up`` to boot the VM
 5. use ``vagrant ssh`` to login the VM
 6. ``cd ../../data`` and ``./install-gpu_modified.sh`` to install and config *Anaconda*, *theano*, *keras*, *cudnn* and *jupyter notebook* 
-7. ``vim ~/.jupyter/jupyter_notebook_config.py`` to change the password of jupyter server (I have failed to config the password in the step, so I run the step 8. instead)
-8. ``cd ~/course/courses/deeplearning1/nbs/``  and  ``jupyter notebook password`` to change the password of jupyter server
-9. In directory ``~/course/courses/deeplearning1/nbs/``, run ``jupyter notebook`` to start the server
-10. In host computer browser, enter ``localhost:8888`` and type the password to access the notebook
+7. ``vim ~/.jupyter/jupyter_notebook_config.py`` to change the password of jupyter server (I have failed to config the password in the step, so I run the step 9. instead)
+8. logout and then login the VM again to source the jupyter environment variable.
+9. ``cd ~/course/nbs/``  and  ``jupyter notebook password`` to change the password of jupyter server
+10. In directory ``~/course/nbs/``, run ``jupyter notebook`` to start the server
+11. In host computer browser, enter ``localhost:8888`` and type the password to access the notebook
 
 ### Run lesson1
 1. Run ``./get-lesson1.sh``
 2. ``vim ~/.theanorc`` modify ``[global] device=gpu`` to ``[global] device=cpu``
+3. ``vim ~/.keras/keras.json`` to setup the backend as ``theano``
 
 ### vagrant hotkey
 vagrant 是一個可以方便設定虛擬機的工具，背後要用到 virtual box。但使用起來比 vb 還要輕量很多，\
