@@ -3,7 +3,7 @@ Setup the VM for learning fast.ai (<http://course.fast.ai/>)
 The install-gpu.sh in modified from <https://github.com/fastai/courses.git>
 
 ### Step to install
-1. install *vagrant* (<https://www.vagrantup.com>) & *virtualbox* (<http://virtualenv.pypa.io>)
+1. install *vagrant* (<https://www.vagrantup.com>) & *virtualbox* (<https://www.virtualbox.org>)
 2. download this repository: ``git clone https://github.com/pomelyu/fastainn_setup.git`` or download the zip
 3. config the VM (in Vagrantfile):
 
